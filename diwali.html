@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali   wisees </title>
+    <link rel="stylesheet" href="./ffggh.css">
+    <link rel="icon" type="image/x-icon" href="./srcImages/favicon-16x16.png">
+</head>
+<body>
+    <audio id="audio" preload="auto">
+        <source src="./new-years-eve-in-peru-fireworks-fire-crackers-and-rockets-to-celebrate-the-new-year-pisco-peru-2012-17692.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <canvas id="canvas"></canvas>
+
+    <!-- Diwali Card -->
+    <div class="card">
+        <div class="title">✨ Happy Diwali! ✨</div>
+        <p class="message">
+            May this Diwali bring light, joy, and prosperity to your life. Let's celebrate the festival of lights with coding and creativity!
+        </p>
+        <p class="message"> FROM HANUMAN </p>
+        <div class="diya-icons">
+            <span class="diya">🪔</span>
+            <span class="diya">🪔</span>
+            <span class="diya">🪔</span>
+        </div>
+   
+        <button id="play-button">Play Audio</button>
+    </div>
+
+    <script src="./ddd.js"></script>
+    <script>
+        const audio = document.getElementById('audio');
+
+        document.getElementById('play-button').addEventListener('click', () => {
+            audio.currentTime = 0; // Reset audio to start
+            audio.muted = false; // Unmute the audio
+            audio.play().catch(error => {
+                console.error("Audio playback failed:", error);
+            });
+        });
+    </script>
+</body>
+</html>
